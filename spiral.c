@@ -1,4 +1,4 @@
-/** Print a sqaure matrix in spiral order.
+/** Print a square matrix in spiral order.
 
 Input:
 [ 
@@ -75,19 +75,19 @@ void move()
             
             break;
         
-        case 'd':
+        case 'd': // if you're going down
             if (i == n-1 || arr[i+1][j] == -1)
                 dir = 'l';
             else i++; // this is how we move down
             break;
         
-        case 'l':
+        case 'l': // if you're going left
             if (j-1 == -1 || arr[i][j-1] == -1)
                 dir = 't';
             else j--; // this is how we move left
             break;
 
-        case 't':
+        case 't': // if you're going up
             if (arr[i-1][j] == -1)
                 dir = 'r';
             else i--; // this is how we move up
